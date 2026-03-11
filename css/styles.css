@@ -1,0 +1,141 @@
+/* ==============================
+   BASE
+============================== */
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+
+nav.navbar {
+    position: sticky;
+    top: 0;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    z-index: 100;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f4efef;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    border-bottom: 3px solid #fff;
+}
+
+/* ==============================
+   TYPO – TITRE NAVBAR
+============================== */
+
+.site-title {
+    font-family: Arial, sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+
+/* ==============================
+   STRUCTURE
+============================== */
+
+header,
+section {
+    width: 100%;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==============================
+   SECTION 2 — EFFET FILM (TON TRAVAIL, INTACT)
+============================== */
+
+.film-frame img {
+    width: 100%;
+    filter: invert(1);
+    transition: 1.15s;
+}
+
+.film-frame img:hover { 
+    filter: invert(0);
+}
+
+/* ==============================
+   SECTION 3 — CV + PORTFOLIO (ENFIN CENTRÉ)
+============================== */
+
+#section3 {
+    padding: 6rem 2rem;
+    text-align: center; /* sécurité */
+}
+
+
+.section3-links {
+    display: inline-flex;      /* 👈 CLÉ ABSOLUE */
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    margin: 0 auto;            /* 👈 CENTRAGE RÉEL */
+}
+
+
+.section3-links a {
+    width: 850px;              /* TA TAILLE */
+    max-width: 45%;           /* RESPONSIVE */
+    aspect-ratio: 1355 / 550;
+}
+
+.section3-links a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section3-links a:hover {
+    transform: scale(1.05);
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    text-align: center;
+    background-color: #111;
+    padding: 1.5rem;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: underline;
+}
